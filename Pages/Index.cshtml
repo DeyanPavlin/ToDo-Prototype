@@ -1,0 +1,33 @@
+﻿@page
+@model TodoList.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "To-Do List";
+}
+<script src="https://kit.fontawesome.com/4c18d09819.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
+<div class="text-center">
+    <h1>to-do list</h1>
+
+    <!-- Form to add a new todo item -->
+    <form method="post" asp-page-handler="Add">
+        <input type="text" name="task" placeholder="Add a new todo" required />
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- List of todo items -->
+    <ul class="todos">
+        @foreach (var todo in Model.TodoItems)
+        {
+            <li>
+                <span>@todo.Task</span>
+                <form method="post" asp-page-handler="Complete">
+                    <input type="hidden" name="id" value="@todo.Id" />
+                    <button type="submit">Complete</button>
+                </form>
+            </li>
+        }
+
+    </ul>
+</div>

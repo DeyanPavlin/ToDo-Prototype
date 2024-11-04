@@ -1,0 +1,77 @@
+﻿.text-center {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    max-height: none;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffdba0;
+    margin-bottom: 1rem;
+}
+
+.todos {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+    .todos li {
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        background-color: #ffdba0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #19212e;
+    }
+
+        .todos li i {
+            margin-left: 0rem;
+            color: #19212e;
+            border-radius: 5px;
+            padding: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .todos li i:hover {
+                cursor: pointer;
+                color: #ffdba0;
+                background-color: #a0c4ff;
+            }
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #19212e;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #19212e;
+    background-color: #ffdba0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+    button:hover {
+        color: #a0c4ff;
+    }
