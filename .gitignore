@@ -1,0 +1,35 @@
+# Ignore Visual Studio user-specific files
+.vs/
+*.user
+*.suo
+
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore Rider project settings
+.idea/
+
+# Ignore user-specific files
+*.userprefs
+
+# Ignore logs
+*.log
+
+# Ignore published files
+publish/
+*.db
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore environment config files (optional, if you use them locally only)
+appsettings.Development.json
+.env
+
+# Ignore Docker artifacts (if any)
+**/docker-compose.*
+**/*.dockerfile
+
+# Optional: ignore test results
+TestResults/
